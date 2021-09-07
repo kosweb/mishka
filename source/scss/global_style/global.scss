@@ -1,0 +1,115 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+	margin: 0;
+  padding: 0;
+	font-family: 'Open-Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  color: var(--outer-space);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.reset-list {
+  margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.button-default {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  word-break: break-all;
+}
+
+.button {
+  min-height: 50px;
+  padding: 20px 40px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid var(--outer-space);
+  color: inherit;
+}
+
+.title {
+  color: var(--black);
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.container {
+  width: $phone;
+  padding-left: $phone-padding;
+  padding-right: $phone-padding;
+}
+
+@media (min-width: $tablet) {
+
+  .container {
+    width: $tablet;
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+
+  .title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .container {
+    width: $desktop;
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+  }
+
+  .title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

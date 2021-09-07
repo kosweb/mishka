@@ -1,13 +1,16 @@
 :root {
+  --white: #ffffff;
+  --black: #000000;
   --dirty-white: #f1f1f1;
+  --bright-gray: #ececec;
   --outer-space: #444444;
   --medium-aquamarine: #63d1bb;
   --aquamarine: #56c3b2;
 }
 
 $phone: 320px;
-$phone-max: 766px;
-$tablet: 767px;
+$phone-max: 767px;
+$tablet: 768px;
 $tablet-max: 1249px;
 $desktop: 1250px;
 
