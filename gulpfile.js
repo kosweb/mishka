@@ -61,7 +61,7 @@ function browserSync() {
 
 function html() {
 	return src(path.src.html)
-		// .pipe(webphtml())
+		.pipe(fileInclude())
 		.pipe(dest(path.build.html))
 		.pipe(browsersync.stream())
 }

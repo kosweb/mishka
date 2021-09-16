@@ -27,6 +27,16 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+@keyframes yo_navi {
+	0% { transform: translateY(-2000px); }
+	100% { transform: translateY(0); }
+}
+
+@keyframes bye_navi {
+	0% { transform: translateY(0); }
+	100% { transform: translateY(-2000px); }
+}
+
 body {
 	margin: 0;
   padding: 0;
@@ -74,6 +84,7 @@ a {
 }
 
 .title {
+  margin: 0;
   color: var(--black);
   font-size: 25px;
   line-height: 30px;
@@ -81,6 +92,8 @@ a {
 }
 
 .container {
+  margin-left: auto;
+  margin-right: auto;
   width: $phone;
   padding-left: $phone-padding;
   padding-right: $phone-padding;
