@@ -1,9 +1,6 @@
 .main-nav {
   background-color: var(--white);
 }
-.main-nav__list {
-  background-color: var(--white);
-}
 
 .main-nav__logo-img {
   transition: 0.2s ease;
@@ -165,6 +162,7 @@
     top: 80px;
     left: 0;
     width: 100%;
+    background-color: var(--white);
 
     &--open {
       animation-name: yo_navi;
@@ -200,10 +198,13 @@
 
   .main-nav {
     position: relative;
+    padding-bottom: 20px;
+    background: linear-gradient(to bottom, #ffffff 90px, #f9f9f9 90px);
 
     &::before {
       content: '';
       position: absolute;
+      z-index: 2;
       top: 90px;
       height: 1px;
       background-color: var(--bright-gray);
