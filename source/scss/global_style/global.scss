@@ -52,6 +52,10 @@ img {
 	height: auto;
 }
 
+picture {
+  display: flex;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -74,13 +78,24 @@ a {
 
 .button {
   min-height: 50px;
-  padding: 20px 40px;
+  padding: 13px 40px;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   text-transform: uppercase;
   border: 2px solid var(--outer-space);
   color: inherit;
+  transition: all 0.2s ease;
+
+  &:hover  {
+    color: var(--white);
+    background-color: var(--outer-space);
+  }
+
+  &:active {
+    transition: 0.1s ease;
+    color: #797979;
+  }
 }
 
 .title {
