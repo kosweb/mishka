@@ -37,6 +37,10 @@
   font-weight: bold;
 }
 
+.reviews__nickname {
+  font-style: unset;
+}
+
 .reviews__buttons {
   display: flex;
   margin-bottom: 40px;
@@ -55,14 +59,10 @@
   }
 
   svg {
-    transition: opacity 0.1s ease;
+    transition: 0.5s ease;
   }
 
-  &:active {
-    svg {
-      opacity: 0.3;
-    }
-  }
+
 }
 
 .reviews__button-send {
@@ -114,6 +114,23 @@
   .reviews__button {
     border: none;
     width: 80px;
+
+    svg {
+      transition: transform 0.2s ease;
+    }
+
+    &:hover {
+      svg {
+        transform: scale(1.2);
+      }
+    }
+
+    &:active {
+      svg {
+        transition: 0.05s ease;
+        opacity: 0.3;
+      }
+    }
   }
 
   .reviews__button-send {
