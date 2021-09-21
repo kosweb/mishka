@@ -1,5 +1,4 @@
 .reviews {
-  position: relative;
   padding-top: 20px;
   padding-bottom: 50px;
 
@@ -82,6 +81,7 @@
   }
 
   .reviews__wrapper {
+    position: relative;
     padding-top: 80px;
     background-image: url('../../img/review@2x.jpg');
     background-repeat: no-repeat;
@@ -108,7 +108,7 @@
   }
 
   .reviews__buttons {
-    margin-right: 15px;
+    margin-right: 12px;
   }
 
   .reviews__button {
@@ -120,7 +120,7 @@
     position: absolute;
     width: unset;
     top: 80px;
-    right: 128px;
+    right: 45px;
   }
 }
 
