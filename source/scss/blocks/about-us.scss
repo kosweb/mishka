@@ -1,0 +1,93 @@
+.about-us {
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+
+.about-us__title {
+  margin-bottom: 30px;
+}
+
+.about-us__list {
+  display: grid;
+  row-gap: 30px;
+}
+
+.about-us__item {
+  padding-top: 50px;
+  color: var(--black);
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+
+  &:nth-child(1) {
+    background-image: url('../../img/icon-feature-flower.svg');
+    background-size: 32px 37px;
+  }
+
+  &:nth-child(2) {
+    background-image: url('../../img/icon-feature-money.svg');
+    background-size: 47px 27px;
+  }
+
+  &:nth-child(3) {
+    background-image: url('../../img/icon-feature-heart.svg');
+    background-size: 34px 27px;
+  }
+
+  &:nth-child(4) {
+    background-image: url('../../img/icon-feature-ball.svg');
+    background-size: 35px 34px;
+  }
+
+  &:nth-child(5) {
+    background-image: url('../../img/icon-feature-rocket.svg');
+    background-size: 55px 23px;
+  }
+
+  &:nth-child(6) {
+    background-image: url('../../img/icon-feature-gift.svg');
+    background-size: 33px 32px;
+  }
+}
+
+@media (min-width: $tablet) {
+
+  .about-us {
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+
+  .about-us__title {
+    margin-bottom: 45px;
+  }
+
+  .about-us__list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 60px;
+  }
+
+  .about-us__item {
+    padding-top: 60px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .about-us {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+
+  .about-us__title {
+    margin-left: 180px;
+  }
+
+  .about-us__list {
+    margin-left: 180px;
+    margin-right: 190px;
+  }
+}
