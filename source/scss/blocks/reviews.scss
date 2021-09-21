@@ -1,0 +1,165 @@
+.reviews {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    background-image: url('../../img/bg-zigzag-line.svg');
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: contain;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 35px;
+}
+
+.reviews__text {
+  margin-top: 0;
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+
+.reviews__nickname-wrapper {
+  margin-bottom: 35px;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.reviews__name {
+  color: var(--black);
+  font-weight: bold;
+}
+
+.reviews__buttons {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.reviews__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+  border: 1px solid var(--bright-gray);
+
+  &--prev {
+    border-right: none;
+  }
+
+  svg {
+    transition: opacity 0.1s ease;
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
+}
+
+.reviews__button-send {
+  width: 100%;
+}
+
+@media (min-width: $tablet) {
+
+  .reviews {
+    padding-top: 0;
+    padding-bottom: 70px;
+
+    &::after {
+      height: 15px;
+    }
+  }
+
+  .reviews__wrapper {
+    padding-top: 80px;
+    background-image: url('../../img/review@2x.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
+
+  .reviews__title {
+    margin-bottom: 60px;
+  }
+
+  .reviews__text {
+    margin-bottom: 65px;
+    font-size: 17px;
+  }
+
+  .reviews__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews__nickname-wrapper {
+    font-size: 18px;
+  }
+
+  .reviews__buttons {
+    margin-right: 15px;
+  }
+
+  .reviews__button {
+    border: none;
+    width: 80px;
+  }
+
+  .reviews__button-send {
+    position: absolute;
+    width: unset;
+    top: 80px;
+    right: 128px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .reviews {
+
+    &::after {
+      height: 20px;
+    }
+  }
+
+  .reviews__wrapper {
+    padding-bottom: 80px;
+    background-position: 100px 0;
+  }
+
+  .reviews__title {
+    margin-left: 180px;
+  }
+
+  .reviews__text {
+    width: 75%;
+    margin-left: 180px;
+  }
+
+  .reviews__navigation {
+    margin-left: 180px;
+  }
+
+  .reviews__nickname-wrapper {
+    margin-bottom: 0;
+  }
+
+  .reviews__buttons {
+    margin-bottom: 0;
+  }
+
+  .reviews__button-send {
+    right: 101px;
+  }
+}
