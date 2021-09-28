@@ -1,4 +1,5 @@
 .reviews {
+  position: relative;
   padding-top: 20px;
   padding-bottom: 50px;
 
@@ -61,8 +62,6 @@
   svg {
     transition: 0.5s ease;
   }
-
-
 }
 
 .reviews__button-send {
@@ -95,7 +94,6 @@
 
   .reviews__text {
     margin-bottom: 65px;
-    font-size: 17px;
   }
 
   .reviews__navigation {

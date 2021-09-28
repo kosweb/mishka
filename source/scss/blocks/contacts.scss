@@ -1,0 +1,143 @@
+.contacts {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.contacts__title {
+  margin-bottom: 35px;
+}
+
+.contacts__mail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  font-style: normal;
+
+  span:first-child {
+    width: 30%;
+  }
+
+  span:last-child {
+    width: 70%;
+  }
+}
+
+.contacts__address {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  span:first-child {
+    width: 30%;
+  }
+
+  span:last-child {
+    width: 70%;
+  }
+}
+
+.contacts__map {
+  margin-bottom: 40px;
+}
+
+.contacts__button {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (min-width: $tablet) {
+
+  .contacts {
+    padding-top: 0;
+  }
+
+  .contacts__address-wrapper {
+    display: flex;
+  }
+
+  .contacts__mail {
+    width: 50%;
+
+    span:last-child {
+      width: 120%;
+    }
+  }
+
+  .contacts__address {
+    width: 50%;
+
+    span:last-child {
+      width: 120%;
+    }
+  }
+
+  .contacts__title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../../img/icon-flag.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 47px 81px;
+  }
+
+  .contacts__button {
+    width: unset;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'contacts map'
+                         'button map';
+    width: $desktop;
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+    padding-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacts__wrapper {
+    grid-area: contacts;
+    width: unset;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .contacts__map {
+    grid-area: map;
+  }
+
+  .contacts__button {
+    grid-area: button;
+    height: fit-content;
+    margin-left: 180px;
+  }
+
+  .contacts__title {
+    padding-left: 180px;
+    background-position: 10% 50%;
+
+  }
+
+  .contacts__address-wrapper {
+    flex-direction: column;
+    padding-left: 180px;
+  }
+
+  .contacts__mail {
+    width: unset;
+  }
+
+  .contacts__address {
+    width: unset;
+  }
+}
