@@ -48,7 +48,7 @@ body {
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
@@ -89,7 +89,6 @@ a {
   transition: all 0.2s ease;
 
   &:active {
-    transition: all 0.1s ease;
     color: #797979;
     background-color: var(--outer-space);
   }

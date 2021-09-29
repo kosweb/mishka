@@ -22,6 +22,10 @@
   border: 1px solid var(--bright-gray);
 }
 
+.catalog__product-img {
+  width: 100%;
+}
+
 .catalog__item-title {
   margin-top: 0;
   margin-bottom: 5px;
@@ -95,6 +99,10 @@
 }
 
 @media (min-width: $tablet) {
+
+  .catalog {
+    margin-bottom: 50px;
+  }
 
   .catalog__title {
     position: relative;
