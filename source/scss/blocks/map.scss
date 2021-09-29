@@ -33,6 +33,10 @@
 
 @media (min-width: $desktop) {
 
+  .map {
+    height: 100%;
+  }
+
   .map__pin {
     left: 53.5%;
   }

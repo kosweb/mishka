@@ -99,6 +99,7 @@
     padding-left: $desktop-padding;
     padding-right: $desktop-padding;
     padding-top: 70px;
+    padding-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -114,10 +115,12 @@
 
   .contacts__map {
     grid-area: map;
+    margin-bottom: 0;
   }
 
   .contacts__button {
     grid-area: button;
+    align-self: end;
     height: fit-content;
     margin-left: 180px;
   }
