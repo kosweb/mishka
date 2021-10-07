@@ -1,0 +1,306 @@
+.page-form {
+  padding-bottom: 55px;
+}
+
+.page-form__intro {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.form__input {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+  border-bottom: 2px solid #000;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 24px;
+
+  &::placeholder {
+    color: rgba($color: #444444, $alpha: 0.3);
+  }
+
+  &:focus {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.form__fieldset {
+  position: relative;
+  overflow: hidden;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  padding-top: 55px;
+  padding-bottom: 34px;
+  border: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 60px;
+    height: 2px;
+    width: 100%;
+    background-color: var(--aquamarine);
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--aquamarine);
+    font-weight: bold;
+    font-size: 17px;
+  }
+}
+
+.form__fieldset--type,
+.form__fieldset--color {
+  display: grid;
+  padding-bottom: 22px;
+
+  label  {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    cursor: pointer;
+  }
+
+  span {
+    &::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		&::before {
+			left: 0;
+			width: 30px;
+			height: 30px;
+			border: 2px solid var(--outer-space);
+		}
+  }
+}
+
+.form__fieldset--type {
+  padding-top: 33px;
+
+  &::after {
+    content: 'ТИП';
+  }
+
+  span {
+    &::before {
+      border-radius: 50%;
+    }
+
+    &::after {
+			left: 10px;
+			width: 10px;
+			height: 10px;
+			background-color: var(--aquamarine);
+			border-radius: 50%;
+			opacity: 0;
+			transition: opacity 0.2s;
+		}
+  }
+}
+
+.form__fieldset--color {
+  padding-top: 43px;
+
+  &::after {
+    content: 'ЦВЕТ';
+  }
+
+  span {
+    &::after {
+			top: 17px;
+			left: 7px;
+			width: 17px;
+			height: 9px;
+			border-left: 2px solid var(--outer-space);
+			border-bottom: 2px solid var(--outer-space);
+			opacity: 0;
+			transform: rotate(-45deg);
+			transition: opacity 0.2s;
+		}
+  }
+}
+
+.form__fieldset--initials {
+
+  &::after {
+    content: 'ФИО';
+  }
+
+  .form__fieldset-wrapper:not(.form__fieldset-wrapper:last-child) {
+    margin-bottom: 22px;
+  }
+}
+
+.form__fieldset--comment {
+  margin-bottom: 10px;
+
+  &::after {
+    content: 'ДОП';
+  }
+}
+
+.form__fieldset--phone {
+  padding-top: 43px;
+
+  &::after {
+    content: 'ТЕЛ';
+  }
+}
+
+.form__fieldset--mail {
+  padding-top: 43px;
+
+  &::after {
+    content: 'E-MAIL';
+  }
+}
+
+.form__bold-text {
+  display: block;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.form__description {
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--outer-space);
+  font-weight: normal;
+}
+
+.form__button {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  padding: 15px;
+  width: 100%;
+  height: 140px;
+  border: 2px solid #000000;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 24px;
+
+  &::placeholder {
+    color: rgba($color: #444444, $alpha: 0.3);
+  }
+}
+
+input[type=radio]:checked + span::after,
+input[type=checkbox]:checked + span::after {
+  opacity: 1;
+}
+
+@media (min-width: $tablet) {
+
+	.form__fieldset {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-left: 170px;
+
+		&::before {
+			display: none;
+		}
+
+		&::after {
+			top: 60px;
+		}
+	}
+
+  .page-form__intro {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+	.form__input {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+  .form__bold-text {
+    font-size: 19px;
+  }
+
+	.form__fieldset--type,
+	.form__fieldset--color {
+		grid-row-gap: 15px;
+
+		label {
+			padding-left: 65px;
+		}
+
+		span {
+			&::before {
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+
+	.form__fieldset--type {
+
+		span {
+			&::after {
+				width: 16px;
+				height: 16px;
+				left: 12px;
+			}
+
+			br {
+				display: none;
+			}
+		}
+	}
+
+	.form__fieldset--color {
+		grid-template-columns: 1fr 1fr;
+
+		span {
+			&::after {
+				width: 25px;
+				height: 10px;
+				left: 8px;
+			}
+		}
+	}
+
+	.form__fieldset--initials {
+
+		.form__fieldset-wrapper {
+			display: flex;
+			align-items: center;
+
+			label {
+				margin-right: 30px;
+			}
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+
+}
