@@ -9,16 +9,28 @@
 
 .contacts__mail {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 35px;
   font-style: normal;
 
-  span:first-child {
-    width: 30%;
+  span {
+    width: 20%;
   }
 
-  span:last-child {
-    width: 70%;
+  a {
+    width: fit-content;
+    height: fit-content;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--aquamarine);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--aquamarine);
+    }
+
+    &:active {
+      color: var(--aquamarine);
+      opacity: 0.3;
+    }
   }
 }
 

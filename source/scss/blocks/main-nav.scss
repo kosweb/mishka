@@ -3,7 +3,7 @@
 }
 
 .main-nav__logo-img {
-  transition: 0.2s ease;
+  transition: 0.2s ease-in-out;
 }
 
 .main-nav__logo-link {
@@ -46,10 +46,10 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease-in-out;
 
   span {
-    transition: 0.1s ease;
+    transition: 0.2s ease-in-out;
   }
 
   svg {
@@ -121,7 +121,7 @@
   &--open {
     span {
       background: 0 0;
-      transition: background .2s 0;
+      transition: background .2s ease-in-out;
 
       &::before,
       &::after {
