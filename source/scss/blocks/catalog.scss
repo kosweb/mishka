@@ -62,7 +62,7 @@
 
   svg {
     opacity: 0.3;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
 
   &:hover {
@@ -143,7 +143,7 @@
 
   .catalog__item {
     flex-direction: column;
-    transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.1s ease-in-out;
 
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px;

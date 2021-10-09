@@ -33,7 +33,7 @@
   text-align: left;
 
   span {
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
   }
 
   &:hover {
@@ -59,7 +59,7 @@
     top: 50%;
     transform: translateY(-50%);
     opacity: 0.5;
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
   }
 
   &:first-child {

@@ -34,7 +34,7 @@ footer {
   font-size: 19px;
   font-weight: bold;
   color: var(--black);
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 
   &:active {
     opacity: 0.3;
@@ -82,7 +82,7 @@ footer {
   .footer__contacts-link {
 
     svg {
-      transition: fill 0.2s ease-in-out;
+      transition: fill 0.1s ease-in-out;
     }
 
     &:hover {
@@ -97,7 +97,7 @@ footer {
     justify-content: right;
 
     svg {
-      transition: transform 0.2s ease-in-out;
+      transition: transform 0.1s ease-in-out;
     }
 
     &:hover {
@@ -113,7 +113,7 @@ footer {
     width: 50%;
 
     svg {
-      transition: fill 0.2s ease-in-out;
+      transition: fill 0.1s ease-in-out;
     }
 
     &:hover {
