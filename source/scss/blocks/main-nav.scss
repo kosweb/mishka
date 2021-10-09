@@ -163,16 +163,14 @@
     left: 0;
     width: 100%;
     background-color: var(--white);
+    transition: transform 0.5s ease-in-out;
 
     &--open {
-      animation-name: yo_navi;
-      animation-duration: .4s;
+      transform: translateY(0);
     }
 
     &--closed {
-      animation-name: bye_navi;
-      animation-duration: 1.4s;
-      animation-fill-mode: forwards;
+      transform: translateY(-2000px);
     }
   }
 

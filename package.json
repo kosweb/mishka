@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "assembly gulp",
   "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "kos",
   "license": "ISC",
   "devDependencies": {
@@ -13,6 +10,7 @@
     "browser-sync": "^2.27.3",
     "css-mqpacker": "^7.0.0",
     "del": "^6.0.0",
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
@@ -28,5 +26,10 @@
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html": "^1.0.2",
     "sass": "^1.35.1"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "deploy": "npm run build && gh-pages -d build"
   }
 }
