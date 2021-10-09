@@ -54,46 +54,6 @@ input[type=radio].visually-hidden {
   overflow: hidden;
 }
 
-@-webkit-keyframes yo_navi {
-  0% {
-    transform: translateY(-2000px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes yo_navi {
-  0% {
-    transform: translateY(-2000px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes bye_navi {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(-2000px);
-  }
-}
-
-@keyframes bye_navi {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(-2000px);
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -1766,8 +1726,8 @@ input[type=checkbox]:checked + span::after {
   }
 
   .site-intro__title {
-    width: 600px;
-    margin-bottom: 295px;
+    width: 615px;
+    margin-bottom: 340px;
   }
 
   .site-intro__button::after {
@@ -2040,22 +2000,15 @@ input[type=checkbox]:checked + span::after {
     left: 0;
     width: 100%;
     background-color: var(--white);
+    transition: transform 0.5s ease-in-out;
   }
 
   .main-nav__list--open {
-    -webkit-animation-name: yo_navi;
-            animation-name: yo_navi;
-    -webkit-animation-duration: 0.4s;
-            animation-duration: 0.4s;
+    transform: translateY(0);
   }
 
   .main-nav__list--closed {
-    -webkit-animation-name: bye_navi;
-            animation-name: bye_navi;
-    -webkit-animation-duration: 1.4s;
-            animation-duration: 1.4s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    transform: translateY(-2000px);
   }
 
   .main-nav__list-item {
