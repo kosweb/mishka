@@ -217,6 +217,13 @@ input[type=checkbox]:checked + span::after {
 
 @media (max-width: $phone-max) {
 
+  .form__fieldset--initials {
+
+    label {
+      margin-bottom: 15px;
+    }
+  }
+
   .form__input {
 
     &:focus {
@@ -418,6 +425,10 @@ input[type=checkbox]:checked + span::after {
 
 @media (min-width: $desktop) {
 
+  textarea:hover {
+    border-color: var(--aquamarine);
+  }
+
   .form__fieldset--color {
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 25px;
@@ -429,10 +440,14 @@ input[type=checkbox]:checked + span::after {
   }
 
   .form__input {
-    transition: all 0.2s ease-in-out;
 
     &:hover {
       border-color: var(--aquamarine);
     }
+  }
+
+  .form__input:hover + svg {
+    fill: var(--aquamarine);
+    opacity: 1;
   }
 }
