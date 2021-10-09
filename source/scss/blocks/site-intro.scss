@@ -1,7 +1,7 @@
 .site-intro {
   min-height: 450px;
   padding-top: 80px;
-  background-image: url('../../img/hero-mobile@2x.jpg');
+  background-image: url('../img/hero-mobile@2x.jpg');
   background-repeat: no-repeat;
   background-position: center -10px;
   background-size: auto 385px;
@@ -105,7 +105,7 @@
   .site-intro {
     min-height: 690px;
 		padding-top: 120px;
-    background-image: url('../../img/hero-tablet@2x.jpg');
+    background-image: url('../img/hero-tablet@2x.jpg');
     background-position: center -70px;
     background-size: auto 750px;
   }
@@ -133,7 +133,7 @@
       left: 0;
       bottom: -10px;
       height: 20px;
-      background-image: url('../../img/bg-zigzag-fill.svg');
+      background-image: url('../img/bg-zigzag-fill.svg');
       background-position: 0 0;
       background-repeat: no-repeat;
       background-size: cover;
@@ -143,7 +143,7 @@
 
 @media (min-width: $desktop) {
   .site-intro {
-    background-image: url('../../img/hero-desktop@2x.jpg');
+    background-image: url('../img/hero-desktop@2x.jpg');
     background-size: auto 770px;
   }
 
