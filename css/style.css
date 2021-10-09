@@ -3,7 +3,7 @@
 @font-face {
   font-weight: normal;
   font-family: "Open-sans";
-  src: url("../../fonts/opensans.woff2") format("woff2"), url("../../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-style: normal;
   font-display: swap;
 }
@@ -11,7 +11,7 @@
 @font-face {
   font-weight: bold;
   font-family: "Open-sans";
-  src: url("../../fonts/opensansbold.woff2") format("woff2"), url("../../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
   font-style: normal;
   font-display: swap;
 }
@@ -1084,7 +1084,7 @@ input[type=checkbox]:checked + span::after {
     left: 0;
     bottom: -15px;
     height: 30px;
-    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-image: url("../img/bg-zigzag-fill.svg");
     background-position: 0 0;
     background-repeat: repeat;
     background-size: contain;
